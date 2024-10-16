@@ -1,24 +1,25 @@
 .grid-container {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 800px 100px;
     gap: 10px;
 }
-.navbar {
-    grid-column: 1 / span 4;
-  
-}
+
+
 .grid-item {
     background-color: lightcoral;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    border: 1px solid black;
     border-radius: 10px;
     padding-top: 10px;
-
-
+}
+.navbar {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    align-items: center;
+    
 }
 .footer {
     grid-column: 1 / span 4;
+    grid-row: 3;
 }
