@@ -51,6 +51,8 @@ header{
     transform: scale(1.1);
 }
 
+
+
 nav a{
     font-size: 1.8rem;
     color: white;
@@ -67,26 +69,30 @@ nav a.active{
 }
 
 @media(max-width: 995px){
+
+
     nav{
-        position: absolute;
-        display: none;
+        margin-top: 20px;
+        position: relative;
         top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #b74b4b;
-        border-bottom: 3px solid #b74b4b;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        left: 0;
+        width: 100%;
+        padding: 1rem 9%;
+        background-color: transparent;
+        filter: drop-shadow(10px);
+        display: flex; /* Add this line */
+        justify-content: flex-end; /* Align links to the right */
+        align-items: center;
+    
     }
+        
 
     nav.active{
         display: block;
     }
 
     nav a{
-        display: block;
+        
         font-size: 2rem;
         margin: 3rem;
     }
@@ -97,7 +103,37 @@ nav a.active{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
     }
+    
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    nav.navbar {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.navbar a {
+        display: block;
+        padding: 1rem;
+        color: white;
+        border-bottom: 1px solid #444;
+        font-size: 2rem;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+    
 }
+
 
 section{
     min-height: 100vh;
@@ -285,6 +321,8 @@ span{
         padding: 2rem;
         margin-top: 4rem;
     }
+
+
 }
 
 
