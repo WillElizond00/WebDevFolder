@@ -101,7 +101,7 @@ nav a.active{
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 5rem 9% ;
 }
 
 .home{
@@ -110,6 +110,9 @@ section{
     align-items: center;
     gap: 8rem;
     background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: 80vh;
 }
 
 .home .home-content h1 {
@@ -247,6 +250,13 @@ span{
 @media(max-width: 1000px){
     .home{
         gap: 4rem;
+        margin-bottom: 10px;
+        padding-bottom: 10px;;
+    }
+    .about-me {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
     }
 }
 
@@ -254,6 +264,8 @@ span{
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
+        margin-bottom: 10px;
+        padding-bottom: 10px;;
     }
 
     .home .home-content h3{
@@ -268,14 +280,32 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+    .about-me {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
 }
 
-<<<<<<< Updated upstream
+
 /* About me | Home Page */
 
 .about-me {
     text-align: center;
     padding: 2rem;
+    margin-top: 4rem;
+}
+.about-me-title h1 {
+    font-size: 60px;
+    
+}
+.text-box h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    position: relative;
+    top: -15px;
 }
 
 .about-me-title {
@@ -303,5 +333,3 @@ span{
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
-=======
->>>>>>> Stashed changes
