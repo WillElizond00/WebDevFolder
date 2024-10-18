@@ -366,6 +366,18 @@ span{
     font-size: 60px;
     
 }
+.project-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.project-content p{
+    text-align: center;
+}
+.made-with {
+    text-align: center;
+}
 
 .project-container-1 h3 {
     text-align: center;
@@ -385,11 +397,30 @@ span{
     flex-shrink: 0;               /* Prevents the image from shrinking */
     width: 500px;                 /* Set a fixed width for the image */
     height: auto;                 /* Adjust the height automatically */
+    position: relative;
 }
 .projectPhoto img {
     max-width: 100%;              /* Make sure the image fits the container */
     height: auto;                 /* Maintain aspect ratio of the image */
+    display:block;
+    width: 100%;
+    border-radius: 2rem;
+
+    
 }
+
+.projectPhoto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(183, 75, 75, 0.45); /* Color tint with 50% opacity */
+    mix-blend-mode: multiply; /* Blend the overlay with the image */
+    pointer-events: none; /* Prevent the overlay from blocking clicks */
+}
+
 .project-content a {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -402,6 +433,8 @@ span{
     border: 2px solid #b74b4b;
     transition: 0.3s ease;
     cursor: pointer;
+    margin-top: 2rem;
+
 }
 .project-content a:hover{
     transform: scale3d(1.03);
