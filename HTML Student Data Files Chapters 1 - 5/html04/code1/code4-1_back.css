@@ -5,10 +5,16 @@
    Tutorial 4
    Coding Challenge 1
 
-   Author: 
-   Date:   
+   Author: William Elizondo
+   Date:   10/21/2024
    
    Filename: code4-1_back.css
 
 */
+
+figure {
+   padding: 20px;
+   border: 20px ridge rgb(52, 52, 180);
+   background: url(ws.png);
+}
 
