@@ -323,8 +323,14 @@ span{
     padding-top: 0;
     position: relative;
     top: -15px;
+    text-align: center;
+    color: #b74b4b
 }
+.text-box p {
+    font-size: 16px;
+    text-align: center;
 
+}
 .about-me-title {
     margin-bottom: 2rem;
 }
@@ -352,6 +358,9 @@ span{
     color: black;
     box-shadow: 0 0 25px #b74b4b;
 }
+.text-box:hover h1{
+    color:black;
+}
 
 /* Projects*/
 
@@ -373,9 +382,11 @@ span{
     text-align: center;
 }
 .project-content p{
+    font-size: 16px;
     text-align: center;
 }
 .made-with {
+    font-size: 13px;
     text-align: center;
 }
 
@@ -455,6 +466,19 @@ span{
     }
 }
 
+/* Want To*/
+
+.want-to-title {
+    text-align: center;
+    font-size: 60px;
+}
+.want-to-title h1 {
+    font-size: 60px;
+}
+.want-to {
+    margin-top: 0;
+    padding-top: 20px;
+}
 @media(max-width: 995px){
     .home{
         flex-direction: column;
