@@ -216,5 +216,6 @@ a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
    aside {
       float: left;
       width: 40%;
+   
    }
 }
