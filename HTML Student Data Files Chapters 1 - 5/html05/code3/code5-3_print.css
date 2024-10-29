@@ -24,7 +24,14 @@
       page-break-inside: avoid;
    }
 
-   nav > li , ol {
-      line-height: 0.3;
+   nav ol li {
+      line-height: 0.3in;
+   }
+
+   nav ol li a::after {
+      content: " [" attr(href) "]";
+      display: inline-block;
+      margin-left: 20px;
+      word-wrap: break-word;
    }
 }
