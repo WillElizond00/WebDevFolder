@@ -6,12 +6,14 @@
    Tutorial 6
    Coding Challenge 4
    
-   Author:   
-   Date:      
+   Author:   William Elizondo
+   Date:      10/30/2024
    Filename: code6-4.html
    -->
    <meta charset="utf-8">
    <title>Coding Challenge 6-4</title>
+   <link href="code6-4_layout.css" rel="stylesheet" />
+   <link href="code6-4_debug.css" rel="stylesheet" />
    
 </head>
 <body>
@@ -20,9 +22,9 @@
       <caption>Class Schedule</caption>
       <colgroup>
          <col id="hours" />
-         <col id="days" colspan="5" />
+         <col id="days" span="5" />
       </colgroup>
-      <theader>
+      <thead>
          <tr>
             <th>Hour</th>
             <th>Mon</th>
@@ -31,12 +33,7 @@
             <th>Thu</th>
             <th>Fri</th>           
          </tr>
-      </theader>
-      <tfooter>
-         <tr>
-            <td colspan="6">First Semester, 2021</td>
-         </tr>
-      </tfooter>      
+      </thead>
       <tbody>
          <tr>
             <th>8:00am</th>
@@ -53,7 +50,7 @@
             <td>Open</td>
             <td colspan="2">German 201</td>
          </tr>         
-          <tr>
+         <tr>
             <th>10:00am</th>
             <td>Ethnic Studies 120</td>
             <td>Open</td>
@@ -61,12 +58,12 @@
             <td>Open</td>
             <td>Ethnic Studies 120</td>
          </tr>
-          <tr>
+         <tr>
             <th>11:00am</th>
             <td colspan="5">Open</td>
          </tr> 
-          <tr>
-            <th>12:00am</th>
+         <tr>
+            <th>12:00pm</th>
             <td rowspan="2">Chem Lab 210</td>
             <td>Open</td>
             <td>Chem Discussion</td>
@@ -76,7 +73,7 @@
          <tr>
             <th>1:00pm</th>
             <td>Art History 110</td>
-            <td>Open</td>
+            
             <td>Open</td>
             <td>Art History 110</td>
             <td>Open</td>
@@ -93,11 +90,14 @@
          </tr> 
          <tr>
             <th>4:00pm</th>
-            <td>Open</td>
-            <td>Open</td>
             <td colspan="2">Statistics 120</td>
          </tr>          
       </tbody>
+      <tfoot>
+         <tr>
+            <td colspan="6">First Semester, 2021</td>
+         </tr>
+      </tfoot>      
    </table>
 </body>
 </html>
