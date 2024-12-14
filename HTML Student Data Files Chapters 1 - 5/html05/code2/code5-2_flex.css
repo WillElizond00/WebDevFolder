@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 5
+   Coding Challenge 2
+
+   Author:   William Elizondo
+   Date:    10/28/2024     
+   Filename: code5-2_txt_flex.css
+
+*/
+
+section {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
+}
+
+div.card {
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 200px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}

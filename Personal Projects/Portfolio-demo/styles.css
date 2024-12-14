@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color:black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+@media(max-width: 995px){
+
+
+    nav{
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 9%;
+        background-color: transparent;
+        filter: drop-shadow(10px);
+        display: flex; /* Add this line */
+        justify-content: flex-end; /* Align links to the right */
+        align-items: center;
+    
+    }
+        
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        
+        font-size: 2rem;
+        margin: 3rem;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+    
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    nav.navbar {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.navbar a {
+        display: block;
+        padding: 1rem;
+        color: white;
+        border-bottom: 1px solid #444;
+        font-size: 2rem;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+    
+}
+
+
+section{
+    padding: 5rem 9% ;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: auto;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #b74b4b;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #b74b4b;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color:transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3)translate(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Web Dev";
+    }
+    21%, 40%{
+        content: "Developer";
+    }
+    41%, 60%{
+        content: "Web Designer";
+    }
+    61%, 80%{
+        content: "Graphic Artist";
+    }
+    81%, 100%{
+        content: "Script Writer";
+    }
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+        margin-bottom: 10px;
+        padding-bottom: 10px;;
+    }
+    .about-me {
+        text-align: center;
+        padding: 2rem;
+       
+    }
+}
+
+
+/* About me | Home Page */
+
+.about-me {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px
+    
+}
+.about-me-title h1 {
+    text-align: center;
+    font-size: 60px;
+    
+}
+.text-box h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 0;
+    position: relative;
+    top: -15px;
+    text-align: center;
+    color: #b74b4b
+}
+.text-box p {
+    font-size: 16px;
+    text-align: center;
+
+}
+.about-me-title {
+    margin-bottom: 2rem;
+}
+.text-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 5px;
+    
+}
+.text-box {
+    width: 30%;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #b74b4b;
+}
+.text-box:hover {
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+.text-box:hover h1{
+    color:black;
+}
+
+/* Projects*/
+
+
+.projects {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.projects-title-container h1 {
+    text-align: center;
+    font-size: 60px;
+    
+}
+.project-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.project-content p{
+    font-size: 16px;
+    text-align: center;
+}
+.made-with {
+    font-size: 13px;
+    text-align: center;
+}
+
+.project-container-1 h3 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+.project-description {
+    display: flex;                /* Enables Flexbox for horizontal layout */
+    justify-content: flex-start;  /* Align items starting from the left */
+    align-items: center;          /* Vertically center the image and text */
+    gap: 2rem;                    /* Adds space between the image and text */
+    text-align: left;             /* Align the text to the left */
+    margin-bottom: 2rem;          /* Add space below each project description */
+    padding-top: 25px;
+}
+.projectPhoto {
+    flex-shrink: 0;               /* Prevents the image from shrinking */
+    width: 500px;                 /* Set a fixed width for the image */
+    height: auto;                 /* Adjust the height automatically */
+    position: relative;
+}
+.projectPhoto img {
+    max-width: 100%;              /* Make sure the image fits the container */
+    height: auto;                 /* Maintain aspect ratio of the image */
+    display:block;
+    width: 100%;
+    border-radius: 2rem;
+
+    
+}
+
+.projectPhoto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(183, 75, 75, 0.45); /* Color tint with 50% opacity */
+    mix-blend-mode: multiply; /* Blend the overlay with the image */
+    pointer-events: none; /* Prevent the overlay from blocking clicks */
+}
+
+.project-content a {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+
+}
+.project-content a:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+/* Projects Media Query*/
+@media(max-width: 995px){
+    .project-description {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .projectPhoto {
+        width: 90vh;
+        max-width: 100%;
+    }
+}
+
+/* Want To*/
+
+.want-to-title {
+    text-align: center;
+    font-size: 60px;
+}
+.want-to-title h1 {
+    font-size: 60px;
+}
+.want-to {
+    margin-top: 0;
+    padding-top: 20px;
+}
+@media(max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    .home-content {
+        text-align: center;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about-me {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+    .text-box-container {
+        display:flex !important; 
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+    .text-box{
+            width: 90%;             /* Make each box fill 90% of the screen */
+            max-width: 100%;        /* Ensure it doesn't go beyond 100% */
+            margin-bottom: 2rem;    /* Add space between boxes */
+            padding: 1.5rem;        /* Add padding inside the box for more space */
+        
+    }
+
+
+}
+
