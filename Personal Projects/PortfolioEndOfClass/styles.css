@@ -1,0 +1,15 @@
+/* Nav Bar Styles */
+
+#nav-bar-links {
+    position: fixed;
+    top: 0;
+    right:0;
+    background-color: red;
+}
+
+#nav-bar-links ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Nav Bar Styles End */
