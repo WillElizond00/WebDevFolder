@@ -1,15 +1,43 @@
+body {
+    background-color: rgb(83, 83, 83);
+}
+
+
 /* Nav Bar Styles */
 
 #nav-bar-links {
     position: fixed;
     top: 0;
-    right:0;
-    background-color: red;
+    right: 20px;
+    border-radius: 0 0 40px 40px;
+    background-image: -moz-linear-gradient( 90deg, rgb(13,204,255) 0%, rgb(71,96,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(13,204,255) 0%, rgb(71,96,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(13,204,255) 0%, rgb(71,96,255) 100%);
 }
 
 #nav-bar-links ul {
     display: flex;
     list-style: none;
+    padding: 10px;
+    
+    
 }
 
+#nav-bar-links ul li {
+    margin: 0 5px;
+}
+
+#nav-bar-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
 /* Nav Bar Styles End */
+
+
+  
